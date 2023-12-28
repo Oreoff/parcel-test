@@ -1,2 +1,47 @@
-@import './common';
+@import './common.scss';
 @import './example';
+@import './header.scss';
+@import './heropage.scss';
+@import './about-us.scss';
+@import './rooms-and-apartments.scss';
+@import './facilities.scss';
+@import './facilites-desc.scss';
+@import './best-apartments.scss';
+@import './gallery.scss';
+@import './footer.scss';
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.cdnfonts.com/css/miracle-2');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --background-color:#313F38;
+}
+a{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+section{
+    padding:0 15;
+    background-color: #313F38;
+    flex-wrap:wrap;
+}
+button, a{
+    cursor: pointer;
+}

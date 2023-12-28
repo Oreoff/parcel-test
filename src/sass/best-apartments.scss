@@ -1,0 +1,34 @@
+.best-apartments
+{
+    padding:0px;
+    position:relative;
+}
+.best-apartments-text
+{
+    position:absolute;
+    top:100px;
+    left:20px;
+}
+.best-apartments-title
+{
+    color: var(--Secondary-color, #FCD043);
+font-family: Miracle;
+font-size: 125px;
+font-style: normal;
+font-weight: 400;
+line-height: 84%;
+text-transform: uppercase;
+max-width:50%;
+margin-bottom:150px;
+}
+.best-apartments-text
+{
+    color: var(--Secondary-color, #FCD043);
+font-family: Helvetica;
+font-size: 1.125em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+max-width:25%;
+}
