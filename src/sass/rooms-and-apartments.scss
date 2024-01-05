@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom:144px;
+    margin-bottom:144px;
 }
 
 .rooms-and-apartments-section
 {
+    display:flex;
     background-color:#FFFCF6;
     padding-top:250px;
     padding-bottom:150px;
@@ -112,4 +113,49 @@ gap:138px;
     display:flex;
     flex-direction: column;
     position:relative;
+}
+@media screen and(max-width:375px) {
+    .rooms-section-title
+    {
+        font-size:60px;
+    }
+    .rooms-title
+    {
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom:40px;
+    }
+    .rooms{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    
+    .book-button
+    {
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .room-name,.room-desc
+    {
+        max-width:50%;
+    }
+    .room-desc
+    {
+        margin-left:50%;
+    }
+    .room-button
+    {
+        position:absolute;
+        top:70%;
+    }
+    .button-div
+    {
+        position:absolute;
+        top:35%;
+    }
+    .rooms-section-text
+    {
+        max-width:50%;
+        margin-top:50px;
+    }
 }

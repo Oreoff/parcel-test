@@ -8,36 +8,6 @@
     justify-content: space-between;
     padding-bottom:100px;
 }
-@media (max-width:1024px) {
-    .hero-page
-    {
-         padding-top:50px;
-    }
-   
-}
-.title
-{
-color: var(--White, #FFFCF6);
-font-family: 'Miracle';
-font-size: 10.625em;
-font-style: normal;
-font-weight: 400;
-margin-bottom:62px;
-}
-.yellow-title
-{
-    color:#FCD043;
-}
-.lower-text
-{
-    color:#FCD043;
-    font-family: Helvetica;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase; 
-}
 .since-button
 {
     display:flex;
@@ -62,6 +32,40 @@ font-weight: 400;
 line-height: normal;
 text-transform: capitalize;
 }
+@media (max-width:1024px) {
+    .hero-page
+    {
+         padding-top:50px;
+    }
+    .since-button
+    {
+        display:none;
+    }
+}
+.title
+{
+color: var(--White, #FFFCF6);
+font-family: 'Miracle';
+font-size: 10.625em;
+font-style: normal;
+font-weight: 400;
+margin-bottom:62px;
+}
+.yellow-title
+{
+    color:#FCD043;
+}
+.lower-text
+{
+    color:#FCD043;
+    font-family: Helvetica;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
 .button-text
 {
     display: inline-flex;
@@ -167,4 +171,16 @@ max-width:20%;
 .italic
 {
 font-style:italic;
+}
+@media screen and(max-width:375px)
+{
+    .title
+    {
+        font-size:80px;
+        margin:0;
+    }
+    .lower-text{
+        margin-top:24px;
+        margin-bottom:48px;
+    }
 }

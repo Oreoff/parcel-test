@@ -9,6 +9,11 @@
     top:100px;
     left:20px;
 }
+.best-apartments-photo
+{
+    width:100%;
+    height:auto;
+}
 .best-apartments-title
 {
     color: var(--Secondary-color, #FCD043);
@@ -21,7 +26,7 @@ text-transform: uppercase;
 max-width:50%;
 margin-bottom:150px;
 }
-.best-apartments-text
+.best-apartments-desc
 {
     color: var(--Secondary-color, #FCD043);
 font-family: Helvetica;
@@ -31,4 +36,22 @@ font-weight: 400;
 line-height: normal;
 text-transform: uppercase;
 max-width:25%;
+}
+@media screen and(max-width:375px){
+    .best-apartments-title
+    {
+        font-size:60px;
+        margin-bottom:142%;
+    }
+    .best-apartments-desc
+    {
+max-width:209px;
+font-size: 18px;
+    }
+    .best-apartments-photo{
+        height:900px;
+        width:100%;
+        object-fit:cover;
+    }
+   
 }

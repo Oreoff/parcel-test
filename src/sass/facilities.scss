@@ -7,10 +7,7 @@
     padding-top:150px;
     padding-bottom:407px;
 }
-.facilities-column
-{
-position: relative;
-}
+
 .congress-hall
 {
     color: var(--Text, #1B3B36);
@@ -41,7 +38,7 @@ font-family: Helvetica;
 font-size: 1.125em;
 font-style: normal;
 font-weight: 400;
-line-height:  155.556%;
+line-height: 155.556%;
 max-width:350px;
 opacity: 0.8;
 margin-top:170px;
@@ -58,4 +55,46 @@ margin-top:170px;
     flex-direction: row;
     margin-left:100px;
     gap:50px;
+}
+@media screen and(max-width:375px)
+{
+    .facilities{
+        padding-bottom:70px;
+        position: relative;
+    justify-content: flex-end;
+    }
+    .facilities-title
+    {
+        font-size:60px;
+        max-width:50%;
+    }
+    .facilities-photo{
+        display:none;
+    }
+    .congress-hall{
+        max-width:39%;
+        font-size:16px;
+        text-align:end;
+        margin:0;
+    }
+    .row
+    {
+        margin-left:0;
+    }
+    .facilities-image
+    {
+        width:70%;
+        height:auto;
+position:absolute;
+top:52%;
+left:15%;
+    }
+    .facility-text
+    {
+        margin-top:200px;
+    }
+    .mobile-hidden
+    {
+        display:none;
+    }
 }

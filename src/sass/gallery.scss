@@ -99,6 +99,10 @@ max-width:350px;
     overflow: hidden;
 
 }
+.center-photo
+{
+    width:auto;
+}
 .marquee-text
 {
     color: rgba(255, 252, 246, 0.12);
@@ -114,4 +118,56 @@ animation: marquee 10s linear infinite;
 .marquee-section
 {
     padding-top:130px;
+}
+@media screen and(max-width:375px)
+{
+    .marquee-section
+    {
+        display:none;
+    }
+    .gallery-title{
+        overflow-wrap: break-word;
+        text-align: center;
+        font-size:60px;
+    }
+    .top-right
+    {
+        top:55%;
+        width:140px;
+        opacity:0.4;
+
+    }.top-left
+    {
+        width:161px;
+        
+    }
+    .bottom-right{
+width:132px;
+top:49%;
+    }
+    .bottom-left{
+width:200px;
+opacity: 0.4;
+bottom:250px;
+    }
+    .center-photo
+    {
+        width:200px;
+        margin-bottom:100px;
+    }
+    .gallery
+    {
+        padding-top:64px;
+    }
+    .gallery-text{
+        font-size: 13px;
+        line-height: 176%; 
+        padding-bottom:220px;
+    }
+    .rooms-image
+    {
+width:100%;
+background-size: cover;
+
+    }
 }

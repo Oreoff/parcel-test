@@ -24,7 +24,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-decoration: underline;
-padding-bottom:275px;
+margin-bottom:275px;
 }
 .footer-title
 {
@@ -179,4 +179,102 @@ margin-bottom:50px;
 {
     color:white;
     background-color: #1B3B36;
+}
+@media only screen and(max-width:376px)
+{
+    footer 
+    {
+        padding-top:100px;
+    }
+    .foot-row{
+        margin-bottom:340px;
+    }
+.footer-buttons-container
+{
+    display:none;
+    
+}
+.footer-title
+    {
+        font-size:84px;
+        max-width:100%;
+        position:default;
+    }
+    .footer-address{
+        font-size:18px;
+position:static;
+width:auto;
+text-align: end;
+max-width: 244px;
+margin-bottom:70px;
+    }
+    .footer-number
+    {
+        font-size:20px;
+        margin-bottom:71px;
+    }
+    .footer-image
+    {
+      width:36px;
+      height: auto;
+margin-right:0;
+       
+}
+.footer-book-button
+{
+    display:none;
+}
+.footer-about-us-title, .footer-text, .socials, .form
+{
+display:none;
+}
+.copyright-section
+{
+    width:100%;
+    
+}
+.copyright{
+color: #1B3B36;
+opacity: 1;
+font-family: Helvetica;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+text-align:center;
+}
+.footer-address-block
+{
+    display:flex;
+    justify-content:center;
+}
+.footer-address-container
+{
+    width:100%;
+    display:flex;
+justify-content:flex-end;
+}
+.back-image
+{
+    width:40%;
+    height:auto;
+    position:absolute;
+    right:0;
+    top:47%;
+}
+.get-in-touch
+{
+    flex-wrap:wrap;
+    padding:0;
+}
+.yellow{
+    top:42%;
+}
+.gallery-label
+{
+    width:50px;
+}
+}
+@media screen and (max-width:1024px) {
+    
 }

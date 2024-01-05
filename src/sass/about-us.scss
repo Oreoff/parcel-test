@@ -84,3 +84,40 @@ max-width: 405px;
     top:0px;
     right:212px;
 }
+@media screen and(max-width:375px)
+{
+    .rooms-and-apartments
+    {
+        display: none;
+    }
+    .about-us-photo
+    {
+        width: 100%;
+        height:auto;
+    }
+    .about-us-title{
+        left:10%;
+        font-size:60px;
+    }
+    .white
+    {
+        color:#FCD043;
+    }
+    .label{
+     top:50%;
+     right:13%;
+     transform:rotate(90deg);
+    }
+    .default-button
+    {
+        display:none;
+    }
+    .address-block
+    {
+        display:none;
+    }
+    .hero-buttons-item
+    {
+        display:none;
+    }
+}
