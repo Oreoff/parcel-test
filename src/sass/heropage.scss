@@ -1,12 +1,21 @@
 @import url('https://fonts.cdnfonts.com/css/miracle-2');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
 .hero-page
 {
+    width: 100%;
     padding-top:112px;
     background-color: #313F38;
-    display: flex;
+  
     justify-content: space-between;
     padding-bottom:100px;
+}
+.hero-page-container
+{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
 }
 .since-button
 {
@@ -26,21 +35,15 @@ padding-left:30px;
 padding-right: 50px;
 color: var(--White, #FFFCF6);
 font-family: Helvetica;
-font-size: 1.375em;
+font-size: 22px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: capitalize;
 }
-@media (max-width:1024px) {
-    .hero-page
-    {
-         padding-top:50px;
-    }
-    .since-button
-    {
-        display:none;
-    }
+.address-container
+{
+    position: relative;
 }
 .title
 {
@@ -59,7 +62,7 @@ margin-bottom:62px;
 {
     color:#FCD043;
     font-family: Helvetica;
-    font-size: 1.125em;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -76,7 +79,7 @@ margin-bottom:62px;
 {
     color: var(--White, #FFFCF6);
 font-family: Helvetica;
-font-size: 1.125em;
+font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 156%;
@@ -108,7 +111,7 @@ max-width:350px;
    
     color: var(--White, #FFFCF6);
 font-family: Helvetica;
-font-size: 1em;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height:  125% ;
@@ -130,7 +133,7 @@ backdrop-filter: blur(20px);
 {
     color: #FFFCF6;
     font-family: Helvetica;
-    font-size: 1.625em;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -161,7 +164,7 @@ backdrop-filter: blur(20px);
     color: var(--White, #FFFCF6);
 text-align: right;
 font-family: Helvetica;
-font-size: 1.625em;
+font-size: 26px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -172,8 +175,12 @@ max-width:20%;
 {
 font-style:italic;
 }
-@media screen and(max-width:375px)
+@media screen and(max-width:767px)
 {
+    .hero-page-container
+    {
+        flex-wrap:wrap;
+    }
     .title
     {
         font-size:80px;
@@ -182,5 +189,73 @@ font-style:italic;
     .lower-text{
         margin-top:24px;
         margin-bottom:48px;
+        font-size:12px;
+    }
+    .since-desc{
+        font-size:12px;
+    }
+    .img-desc
+    {
+        font-size:12px;
+    }
+    .since-button
+    {
+        display:none;
+    }
+}
+@media screen and (max-width:1280px)and (min-width:768px) {
+    .hero-buttons-item{
+        padding:43px 63px;
+    }
+    .since-desc
+    {
+        max-width:200px;
+        font-size:13px;
+        line-height:176%;
+        margin-top:30px;
+    }
+    .default-button{
+        margin-top:40px;
+    }
+    .room-section-title
+    {
+        font-size:150px;
+    }
+    .hero-page-container
+    {
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+    }
+    .title
+    {
+        font-size:100px;
+    }
+    .hero-page
+    {
+         padding-top:50px;
+    }
+    .since-button
+    {
+        display:none;
+    }
+    .address-item
+    {
+        font-size:18px;
+    }
+    .img-desc
+    {
+        font-size:18px;
+    }
+    .hero-buttons-item{
+        font-size:14px;
+    }
+    .lower-text
+    {
+        font-size:14px;
+    }
+    .since-desc{
+        font-size:13px;
     }
 }
